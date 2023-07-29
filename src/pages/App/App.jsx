@@ -1,19 +1,30 @@
 import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import CoffeeShops from '../CoffeeShops/CoffeShops';
-import CoffeeShopDetail from '../CoffeeShopDetail/CoffeeShopDetail';
+import CoffeeShopsPage from '../CoffeeShopsPage/CoffeeShopsPage';
+import CoffeeShopDetailPage from '../CoffeeShopDetailPage/CoffeeShopDetailPage';
+import NavBar from '../../components/NavBar/NavBar';
+import LoginPage from '../LoginPage/LoginPage';
 
 import './App.css';
 
-function App() {
+export default function App() {
+  const [user, setUser] = useState({});
+  
   return (
-    <>
-      <Routes>
 
-      </Routes>
-      </>
-    
+    <main className="App">
+      { user ?
+        <>
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<CoffeeShopsPage />} />
+            <Route path="/coffeeshops/:coffeeShopName" element={<CoffeeShopDetailPage />} />
+          </Routes>
+        </>
+        :
+        <LoginPage setUser={setUser} />
+      }
+    </main>
+
   );
 }
-
-export default App;
