@@ -6,9 +6,6 @@ export default function NavBar() {
       <Link to="/coffeeshops">Coffee Shops</Link>
       &nbsp; | &nbsp;
       <Link to="/createCS">Create A Coffee Shop Listing</Link>
-      &nbsp; | &nbsp;
-      <Link to="/coffeeshops/details">Coffee Shop Details</Link>
-
     </nav>
   );
 }

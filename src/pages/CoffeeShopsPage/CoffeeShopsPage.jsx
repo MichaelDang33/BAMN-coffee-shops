@@ -39,16 +39,18 @@ export default function CoffeeShopsPage() {
             {coffeeShop.map((shop) => {
                 return (
                     <>
+                        <img src={shop.image} />
                         <h3>Name: {shop.name}</h3>
                         <h3>Location: {shop.location}</h3>
                         <h3>Rating: {shop.rating}</h3>
                         {/* <Shop shop={shop}/> */}
                         <div>
-                            <Edit shop={shop} handleEdit={handleEdit} />
-                            <button onClick={() => handleDelete(shop)}>Delete</button>
+                            {/* <Edit shop={shop} handleEdit={handleEdit} /> */}
+                            {/* <button onClick={() => handleDelete(shop)}>Delete</button> */}
                             <Link to={`/details/${shop._id}`}>Details</Link>
                             
                         </div>
+                        
                     </>
                 )
             })}

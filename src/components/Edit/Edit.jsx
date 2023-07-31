@@ -17,19 +17,19 @@ const Edit = (props) => {
       <details>
         <summary>Edit Coffee Shop</summary>
         <form onSubmit={handleSubmit}>
-            <input type='text' value={shop.name} name='name' onChange={handleChange}/>
+            <input type='text' placeholder='Name' value={shop.name} name='name' onChange={handleChange}/>
             <br/><br/>
-            <input type='text' value={shop.location} name='location' onChange={handleChange}/>
+            <input type='text' placeholder='Location' value={shop.location} name='location' onChange={handleChange}/>
             <br/><br/>
-            <input type='text' value={shop.featuredItems} name='featuredItems' onChange={handleChange}/>
+            <input type='text' placeholder='Featured Items' value={shop.featuredItems} name='featuredItems' onChange={handleChange}/>
             <br/><br/>
-            <input type='text' value={shop.description} name='description' onChange={handleChange}/>
+            <input type='text' placeholder='Description' value={shop.description} name='description' onChange={handleChange}/>
             <br/><br/>
-            <input type='text' value={shop.website} name='website' onChange={handleChange}/>
+            <input type='text' placeholder='Website' value={shop.website} name='website' onChange={handleChange}/>
             <br/><br/>
-            <input type='number' value={shop.rating} name='rating' onChange={handleChange}/>
+            <input type='number' placeholder='Ratings' value={shop.rating} name='rating' onChange={handleChange}/>
             <br/><br/>
-            <input type='text' value={shop.image} name='image' onChange={handleChange}/>
+            <input type='text' placeholder='Image' value={shop.image} name='image' onChange={handleChange}/>
             <br/><br/>
             <input type='submit' />
         </form>
