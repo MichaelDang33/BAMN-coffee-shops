@@ -39,6 +39,17 @@ app.put('/coffeeshops/:id', (req, res)=>{
   .then((updatedShop)=>res.json(updatedShop))
 });
 
+app.get('/coffeeshops/:id', (req, res)=>{
+  CoffeeShop.findById(req.params.id)
+  .then((foundShop)=>res.json(foundShop))
+});
+
+
+app.delete('/coffeeshops/:id', (req, res)=>{
+  CoffeeShop.findByIdAndRemove(req.params.id)
+  .then((deletedShop)=>res.json(deletedShop))
+});
+
 
 // The following "catch all" route (note the *) is necessary
 // to return the index.html on all non-AJAX requests

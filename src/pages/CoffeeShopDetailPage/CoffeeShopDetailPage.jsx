@@ -1,40 +1,30 @@
-import React from 'react';
-import './CoffeeShopDetailPage.css';
-// import { useParams } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import { useParams } from 'react-router-dom';
 
-export default function CoffeeShopDetailPage(){
+export default function CoffeeShopDetailPage(props) {
+    const { id } = useParams();
+    const [coffeeShop, setCoffeeShop] = useState({...props.coffeeShop});
+
+    useEffect(() => {
+        axios.get(`http://localhost:3000/detail/${id}`)
+            .then((response) => setCoffeeShop(response.data))
+            .catch((error) => console.log(error));
+    }, []);
+
+
     return (
-        <h1 className='CoffeeShopDetailPage'>
-        Coffee Shop Details Page
-        </h1>
+        <>
+            <h1>{coffeeShop.name}</h1>
+            <h3>Location: {coffeeShop.location}</h3>
+            <h3>Rating: {coffeeShop.rating}</h3>
+            <h3>Featured Item: {coffeeShop.featuredItem}</h3>
+            <h3>Discription: {coffeeShop.discription}</h3>
+            <h3>Website:{coffeeShop.website}</h3>
+            <h3>{coffeeShop.image}</h3>
+
+        </>
     );
 }
 
-// export default function CoffeeShopDetailPage({ coffeeShop }) {
 
-//     let { coffeeShopName } = useParams();
-//     let cs = coffeeShop.find(cs => cs.name === coffeeShopName);
-
-
-//     return (
-//         <div className='flex'>
-//             <div className='CoffeeShopDetailPage'>
-//                 <h1>{cs.name}</h1>
-//                 <h3>{cs.location}</h3>
-
-//                 <h2>Featured Items</h2>
-//                 <p>{cs.featuredItems}</p>
-
-//                 <h2>Description</h2>
-//                 <p>{cs.description}</p>
-
-//                 <h2>Website</h2>
-//                 <p>{cs.website}</p>
-
-//                 <h2>Rating</h2>
-//                 <p>{cs.rating} stars</p>
-//             </div>
-//             <img src={`${cs.image}`} alt="" />
-//         </div>
-//     );
-// }
