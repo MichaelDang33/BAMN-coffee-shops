@@ -5,28 +5,28 @@ import { useParams } from 'react-router-dom';
 export default function CoffeeShopDetailPage({ coffeeShop }) {
 
     let { coffeeShopName } = useParams();
-    let coffeeShopD = coffeeShop.find(cs => cs.name === coffeeShopName);
+    let cs = coffeeShop.find(cs => cs.name === coffeeShopName);
 
 
     return (
         <div className='flex'>
             <div className='CoffeeShopDetailPage'>
-                <h1>{coffeeShopD.name}</h1>
-                <h3>{coffeeShopD.location}</h3>
+                <h1>{cs.name}</h1>
+                <h3>{cs.location}</h3>
 
                 <h2>Featured Items</h2>
-                <p>{coffeeShopD.featuredItems}</p>
+                <p>{cs.featuredItems}</p>
 
                 <h2>Description</h2>
-                <p>{coffeeShopD.description}</p>
+                <p>{cs.description}</p>
 
                 <h2>Website</h2>
-                <p>{coffeeShopD.website}</p>
+                <p>{cs.website}</p>
 
                 <h2>Rating</h2>
-                <p>{coffeeShopD.rating} stars</p>
+                <p>{cs.rating} stars</p>
             </div>
-            <img src={`${coffeeShopD.image}`} alt="" />
+            <img src={`${cs.image}`} alt="" />
         </div>
     );
 }
