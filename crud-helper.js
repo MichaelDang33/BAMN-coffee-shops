@@ -9,5 +9,3 @@ require('./config/database');
 // const Order = require('./models/order');
 
 // Local variables will come in handy for holding retrieved documents
-let user, item, category, order;
-let users, items, categories, orders;
