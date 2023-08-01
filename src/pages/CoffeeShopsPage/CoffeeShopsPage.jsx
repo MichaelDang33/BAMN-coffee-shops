@@ -3,7 +3,7 @@ import axios from 'axios';
 import Shop from './Shop';
 import Edit from '../../components/Edit/Edit';
 import { Link } from 'react-router-dom';
-import { makeGoogleMapsLink } from '../../index'; // Import the function from utils.js
+import { makeGoogleMapsLink } from '../../index'; 
 
 export default function CoffeeShopsPage() {
   const [coffeeShop, setCoffeeShop] = useState([]);
