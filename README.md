@@ -3,11 +3,11 @@ This application will use full CRUD operations for customers to create and updat
 
 
 # The details included are:
-   - name of the coffee shop
-    - location
-    - details
-    - description
-    - photos
+- name of the coffee shop
+- location
+- details
+- description
+- photos
 
 
 ## User Story
