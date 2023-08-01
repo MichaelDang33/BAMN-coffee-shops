@@ -46,17 +46,24 @@ export default function CoffeeShopDetailPage() {
     <>
       <div>
         <h1>{coffeeShop.name}</h1>
-        <h3>{coffeeShop.image}</h3>
-        <a href={googleMapsLink} target="_blank" rel="noopener noreferrer">View Location</a>
+        <img src={coffeeShop.image} alt={coffeeShop.name} />
+        <a href={googleMapsLink} target="_blank" rel="noopener noreferrer">
+          View Location
+        </a>
         <h3>Featured Item: {coffeeShop.featuredItems}</h3>
         <h3>Description: {coffeeShop.description}</h3>
         <h3>Rating: {coffeeShop.rating}</h3>
-        <h3>Website: {coffeeShop.website}</h3>
+        {/* Make the website a hyperlink */}
+        {coffeeShop.website && (
+          <h3>
+            Website: <a href={coffeeShop.website} target="_blank" rel="noopener noreferrer">{coffeeShop.website}</a>
+          </h3>
+        )}
       </div>
       <div>
         <button onClick={handleDelete}>Delete</button>
         <Edit coffeeShop={coffeeShop} handleEdit={handleEdit} />
-        <Link to='/coffeeshops'>Back</Link>
+        <Link to="/coffeeshops">Back</Link>
       </div>
     </>
   );
