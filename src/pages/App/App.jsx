@@ -18,7 +18,7 @@ export default function App() {
   return (
 
     <main>
-      {/* { user ? */}
+      { user ?
         <>
           <NavBar user={user} setUser={setUser} />
           <Routes>

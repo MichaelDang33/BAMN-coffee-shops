@@ -6,8 +6,11 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import * as userService from '../../utilities/users-service';
 
-export default function NavBar() {
-
+export default function NavBar({ user, setUser }) {
+  function handleLogOut() {
+    userService.logOut();
+    setUser(null);
+  }
 return (
   <Navbar expand="lg" className="bg-body-tertiary">
     <Container>
@@ -17,6 +20,7 @@ return (
         <Nav className="me-auto">
           <Nav.Link href="/coffeeshops">All Coffee Shops</Nav.Link>
           <Nav.Link href="/createCS">Create A Coffee Shop Listing</Nav.Link>
+          <Nav.Link href="" onClick={handleLogOut}>Log Out</Nav.Link>
           <NavDropdown title="Dropdown" id="basic-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">
@@ -28,17 +32,10 @@ return (
               Separated link
             </NavDropdown.Item>
           </NavDropdown>
+<span>Welcome, {user.name}</span>
         </Nav>
       </Navbar.Collapse>
     </Container>
   </Navbar>
 );
 }
-
-// export default function NavBar({ user, setUser }) {
-//   function handleLogOut() {
-//     userService.logOut();
-//     setUser(null);
-//   }
-{/* <span>Welcome, {user.name}</span>
-      &nbsp;&nbsp;<Link to="" onClick={handleLogOut}>Log Out</Link> */}
