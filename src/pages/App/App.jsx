@@ -6,8 +6,6 @@ import CoffeeShopsPage from '../CoffeeShopsPage/CoffeeShopsPage';
 import CoffeeShopDetailPage from '../CoffeeShopDetailPage/CoffeeShopDetailPage';
 import NavBar from '../../components/NavBar/NavBar';
 import AuthPage from '../AuthPage/AuthPage';
-import LoginPage from '../LoginPage/LoginPage';
-import axios from 'axios';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
