@@ -7,6 +7,7 @@ import NavBar from '../../components/NavBar/NavBar';
 import LoginPage from '../LoginPage/LoginPage';
 import axios from 'axios';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function App() {
   const [user, setUser] = useState({});
@@ -14,8 +15,8 @@ export default function App() {
   
   return (
 
-    <main className="App">
-      { user ?
+    <main>
+      {/* { user ? */}
         <>
           <NavBar />
           <Routes>
@@ -24,9 +25,9 @@ export default function App() {
             <Route path="/details/:id" element={<CoffeeShopDetailPage />} />
           </Routes>
         </>
-        :
-        <LoginPage setUser={setUser} />
-      }
+        
+        {/* <LoginPage setUser={setUser} /> */}
+      {/* } */}
     </main>
 
   );
