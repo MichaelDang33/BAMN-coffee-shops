@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import Edit from '../../components/Edit/Edit';
-import Shop from '../CoffeeShopsPage/Shop';
 
 
 export default function CoffeeShopDetailPage() {
