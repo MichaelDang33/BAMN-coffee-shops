@@ -1,9 +1,7 @@
 const BASE_URL = '/api/users';
 
 export async function signUp(userData) {
-  // Fetch uses an options object as a second arg
-  // to make requests other than GET, include data,
-  // set headers.
+  // Fetch uses an options object as a second arg to make requests other than GET, include data, set headers.
   const res = await fetch(BASE_URL, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },

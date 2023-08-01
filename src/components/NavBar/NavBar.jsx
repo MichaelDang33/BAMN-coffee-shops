@@ -4,16 +4,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import * as userService from '../../utilities/users-service';
 
 export default function NavBar() {
-//   return (
-//     <nav>
-//       <Link to="/coffeeshops">Coffee Shops</Link>
-//       &nbsp; | &nbsp;
-//       <Link to="/createCS">Create A Coffee Shop Listing</Link>
-//     </nav>
-//   );
-// }
 
 return (
   <Navbar expand="lg" className="bg-body-tertiary">
@@ -41,3 +34,11 @@ return (
   </Navbar>
 );
 }
+
+// export default function NavBar({ user, setUser }) {
+//   function handleLogOut() {
+//     userService.logOut();
+//     setUser(null);
+//   }
+{/* <span>Welcome, {user.name}</span>
+      &nbsp;&nbsp;<Link to="" onClick={handleLogOut}>Log Out</Link> */}
