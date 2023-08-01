@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import Shop from './Shop';
-import Edit from '../../components/Edit/Edit';
 import { Link } from 'react-router-dom';
 import { makeGoogleMapsLink } from '../../index'; 
 
@@ -12,20 +10,6 @@ export default function CoffeeShopsPage() {
     axios.get('http://localhost:3000/coffeeshops')
       .then((response) => setCoffeeShop(response.data))
       .catch((error) => console.log(error));
-  };
-
-  const handleEdit = (editedShop) => {
-    axios.put('http://localhost:3000/coffeeshops/' + editedShop._id, editedShop)
-      .then((response) => {
-        getCoffeeShop();
-      });
-  };
-
-  const handleDelete = (deletedShop) => {
-    axios.delete('http://localhost:3000/coffeeshops/' + deletedShop._id)
-      .then((response) => {
-        getCoffeeShop();
-      });
   };
 
   useEffect(() => {
@@ -48,9 +32,6 @@ export default function CoffeeShopsPage() {
             </a>
             <h3>Rating: {shop.rating}</h3>
             <div>
-              {/* Uncomment the following lines if needed */}
-              {/* <Edit shop={shop} handleEdit={handleEdit} /> */}
-              {/* <button onClick={() => handleDelete(shop)}>Delete</button> */}
               <Link to={`/details/${shop._id}`}>Details</Link>
             </div>
           </div>
