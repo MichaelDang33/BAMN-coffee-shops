@@ -1,4 +1,11 @@
 #  Caffeine  Chronicles 
+![main page](<Img/Screenshot 2023-08-02 091148.png>)
+![details page](<Img/Screenshot 2023-08-02 091214.png>)
+![create form](<Img/Screenshot 2023-08-01 220535.png>)
+
+Welcome to Caffeine Chronicles, the ultimate app for all coffee enthusiasts and cafe connoisseurs! Our platform is dedicated to providing comprehensive reviews and insights about coffee shops from around the world. Whether you're a seasoned coffee aficionado or just beginning your journey into the world of specialty brews, Caffeine Chronicles is your trusted companion for discovering the perfect coffee shop for your unique taste.
+At Caffeine Chronicles, we understand the importance of a perfect cup of coffee, and our community of passionate reviewers shares their firsthand experiences to guide you on your coffee adventures. From quaint hidden gems to bustling urban hangouts, we've meticulously curated a diverse range of coffee shop profiles to suit every mood and preference.
+<br/>
 This application will use full CRUD operations for customers to blog and update details about coffee shops in their area. 
 
 
@@ -16,7 +23,7 @@ Users want great coffee and blog about it and share their experience with fellow
 
 ## App link     https://bamncoffeeshops-lw86.onrender.com/
 
-![screenshot_2023-08-01_220509](https://github.com/vogat/hiking/assets/132204123/6ce6ad42-660f-41b0-ab5d-d718c27d48dd)
+
 
 ## App Features
 
