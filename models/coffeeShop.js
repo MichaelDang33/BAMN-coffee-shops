@@ -3,6 +3,7 @@ const Schema = mongoose.Schema;
 
 const coffeeShopSchema = new Schema({
     name: { type: String, required: true },
+    writer: { type: String, required: true },
     description: { type: String, required: true },
     featuredItems: { type: String },
     cityState: { type: String },

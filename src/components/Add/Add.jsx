@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 const Add = (props) => {
-    const [shop, setShop] = useState({ name: '', location: '', cityState: '', featuredItems: '', description: '', website: '', rating: 0, image: '' });
+    const [shop, setShop] = useState({ name: '', writer:'', location: '', cityState: '', featuredItems: '', description: '', website: '', rating: 0, image: '' });
 
     const navigate = useNavigate()
 
@@ -32,6 +32,10 @@ const Add = (props) => {
                         <div class="col-md-6">
                             <label for="name" class="form-label">Name:</label>
                             <input class="form-control" type='text' name='name' id="name" onChange={handleChange} />
+                        </div>
+                        <div class="col-md-6">
+                            <label for="writer" class="form-label">Author:</label>
+                            <input class="form-control" type='text' name='writer' id="writer" onChange={handleChange} />
                         </div>
                         <div class="col-md-6">
                             <label for="description" class="form-label">Description:</label>

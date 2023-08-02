@@ -54,8 +54,10 @@ export default function CoffeeShopsPage() {
                     <Card.Body>
                       <Card.Title>Name: {shop.name}</Card.Title>
                       <Card.Text>
+                        By: {shop.writer}
+                        <br/>
                         {shop.cityState}
-                        <br />
+                        <br/>
                         Rating: {shop.ratings}
                       </Card.Text>
                       <Button variant="outline-dark" href={`/details/${shop._id}`}>

@@ -20,6 +20,8 @@ const Edit = (props) => {
         <div class="col-md-6">
             <input type='text' placeholder='Name' value={shop.name} name='name' onChange={handleChange}/>
             <br/><br/>
+            <input type='text' placeholder='Author' value={shop.writer} name='writer' onChange={handleChange}/>
+            <br/><br/>
             <input type='text' placeholder='Description' value={shop.description} name='description' onChange={handleChange}/>
             <br/><br/>
             <input type='text' placeholder='Featured Items' value={shop.featuredItems} name='featuredItems' onChange={handleChange}/>

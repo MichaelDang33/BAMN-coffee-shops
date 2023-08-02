@@ -46,14 +46,17 @@ export default function CoffeeShopDetailPage() {
     <>
       <Container>
     <h1>{coffeeShop.name}</h1>
+    <h5>Written by {coffeeShop.writer}</h5>
      <Row className="px-4 my-4">
   <Col sm={10}>
     <Image style={{width: '150%', height:'400px'}} src={coffeeShop.image} alt={coffeeShop.name} fluid rounded />
   </Col>
 <br/>
   <Col md={8}>
+
+    <h4>Located in {coffeeShop.cityState}</h4>
     <h4>{coffeeShop.description}</h4>
-    <h4>Featured Item: {coffeeShop.featuredItems}</h4>
+    <h4>Featured Items : {coffeeShop.featuredItems}</h4>
     <h4>Rating: {coffeeShop.rating}</h4>
     <a href={googleMapsLink} target="_blank" rel="noopener noreferrer">
       View Location
