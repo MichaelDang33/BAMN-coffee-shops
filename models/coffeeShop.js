@@ -3,9 +3,10 @@ const Schema = mongoose.Schema;
 
 const coffeeShopSchema = new Schema({
     name: { type: String, required: true },
-    location: { type: String },
-    featuredItems: { type: String },
     description: { type: String, required: true },
+    featuredItems: { type: String },
+    cityState: { type: String },
+    location: { type: String },
     website: { type: String },
     rating: { type: Number },
     image: { type: String },
