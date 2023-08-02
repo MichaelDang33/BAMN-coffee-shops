@@ -13,7 +13,7 @@ const Add = (props) => {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        axios.post('http://localhost:3000/coffeeshops', shop)
+        axios.post('https://bamn-coffee-shops.onrender.com/coffeeshops', shop)
         .then((response) => console.log(response))
         .catch((error) => console.log(error))
 

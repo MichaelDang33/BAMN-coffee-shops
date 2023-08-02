@@ -4,12 +4,18 @@ const mongoose = require('mongoose');
 const CoffeeShop = require('./models/coffeeShop')
 const favicon = require('serve-favicon');
 const logger = require('morgan');
+const cors = require('cors');
 
+const corsOptions = {
+  origin: "*",
+}
 // Always require and configure near the top
 require('dotenv').config();
 
 const app = express();
 const port = process.env.PORT || 3001;
+
+app.use(cors(corsOptions))
 
 // Connect to the database
 require('./config/database');
@@ -62,15 +68,6 @@ app.use('/api/users', require('./routes/api/users'));
 //   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 // });
 
-app.get(["/", "/:name"], (req, res) => {
-  greeting = "<h1>Hello From Node on Fly!</h1>";
-  name = req.params["name"];
-  if (name) {
-    res.send(greeting + "</br>and hello to " + name);
-  } else {
-    res.send(greeting);
-  }
-});
 
 //  app.listen(port, function() {
 //    console.log(`Express app running on port ${port}`)
