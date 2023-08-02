@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import Edit from '../../components/Edit/Edit';
-import {Container, Row, Col, Image, Button} from 'react-bootstrap';
+import { Container, Row, Col, Image, Button } from 'react-bootstrap';
 
 
 export default function CoffeeShopDetailPage() {
@@ -45,50 +45,50 @@ export default function CoffeeShopDetailPage() {
   return (
     <>
       <Container>
-    <h1>{coffeeShop.name}</h1>
-    <h5>Written by {coffeeShop.writer}</h5>
-     <Row className="px-4 my-4">
-  <Col sm={10}>
-    <Image style={{width: '150%', height:'400px'}} src={coffeeShop.image} alt={coffeeShop.name} fluid rounded />
-  </Col>
-<br/>
-  <Col md={8}>
+        <h1>{coffeeShop.name}</h1>
+        <h5>Written by {coffeeShop.writer}</h5>
+        <Row className="px-4 my-4">
+          <Col sm={10}>
+            <Image style={{ width: '150%', height: '400px' }} src={coffeeShop.image} alt={coffeeShop.name} fluid rounded />
+          </Col>
+          <br />
+          <Col md={8}>
+            <br />
+            <p>Located in <strong>{coffeeShop.cityState}</strong></p>
+            <p>{coffeeShop.description}</p>
+            <p><strong>Featured Items:</strong>{coffeeShop.featuredItems}</p>
+            <p><strong>Rating:</strong> {coffeeShop.rating}</p>
+            {coffeeShop.website && (
+              <p>
+                <strong>Website:</strong>{' '}
+                <a href={coffeeShop.website} target="_blank" rel="noopener noreferrer">
+                  {coffeeShop.website}
+                </a>
+              </p>
+            )}
+            <a href={googleMapsLink} target="_blank" rel="noopener noreferrer">
+              View Location
+            </a>
+            <hr />
+            <Edit coffeeShop={coffeeShop} handleEdit={handleEdit} />
 
-    <h4>Located in {coffeeShop.cityState}</h4>
-    <p>{coffeeShop.description}</p>
-    <h4>Featured Items : {coffeeShop.featuredItems}</h4>
-    <h4>Rating: {coffeeShop.rating}</h4>
-    <a href={googleMapsLink} target="_blank" rel="noopener noreferrer">
-      View Location
-    </a>
-    {coffeeShop.website && (
-      <h4>
-        Website:{' '}
-        <a href={coffeeShop.website} target="_blank" rel="noopener noreferrer">
-          {coffeeShop.website}
-        </a>
-      </h4>
-    )}
-  <hr/>
-    <Edit coffeeShop={coffeeShop} handleEdit={handleEdit} />
-  
-  </Col>
-</Row>
-    </Container>
+          </Col>
+        </Row>
+      </Container>
 
-<Row className="mt-3">
-  <Col md={{ span: 2, offset: 8 }}>
-    <Button variant="dark" onClick={handleDelete}>
-      Delete
-    </Button>
-  </Col>
-</Row>
+      <Row className="mt-3">
+        <Col md={{ span: 2, offset: 8 }}>
+          <Button variant="dark" onClick={handleDelete}>
+            Delete
+          </Button>
+        </Col>
+      </Row>
 
-<Row className="mt-3">
-  <Col md={{ span: 2, offset: 8 }}>
-    <Link class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" to="/coffeeshops">Back</Link>
-  </Col> 
-</Row>
+      <Row className="mt-3">
+        <Col md={{ span: 2, offset: 8 }}>
+          <Link class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" to="/coffeeshops">Back</Link>
+        </Col>
+      </Row>
     </>
   );
 }

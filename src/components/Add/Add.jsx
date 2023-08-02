@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 const Add = (props) => {
-    const [shop, setShop] = useState({ name: '', writer: '', location: '', cityState: '', featuredItems: '', description: '', website: '', rating: 0, image: '' });
+    const [shop, setShop] = useState({ name: '', location: '', featuredItems: '', description: '', website: '', rating: 0, image: '', cityState: '', writer: '' });
 
     const navigate = useNavigate()
 

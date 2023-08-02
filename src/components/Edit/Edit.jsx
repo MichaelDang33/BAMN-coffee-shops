@@ -1,5 +1,6 @@
 import {useState} from 'react'
 
+
 const Edit = (props) => {
   const [shop, setShop] = useState({...props.shop})
 
@@ -17,7 +18,7 @@ const Edit = (props) => {
       <details>
         <summary>Edit Coffee Shop</summary>
         <form onSubmit={handleSubmit}>
-        <div class="col-md-6">
+        <div>
             <input type='text' placeholder='Name' value={shop.name} name='name' onChange={handleChange}/>
             <br/><br/>
             <input type='text' placeholder='Author' value={shop.writer} name='writer' onChange={handleChange}/>

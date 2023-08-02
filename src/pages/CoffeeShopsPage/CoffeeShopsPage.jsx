@@ -52,13 +52,13 @@ export default function CoffeeShopsPage() {
                   <Card style={{ width: '20rem' }} key={shop._id}>
                     <Card.Img variant="top" style={{ width: '100%', height: '200px' }} src={shop.image} alt={shop.name} />
                     <Card.Body>
-                      <Card.Title>Name: {shop.name}</Card.Title>
+                      <Card.Title>{shop.name}</Card.Title>
                       <Card.Text>
                         By: {shop.writer}
                         <br/>
                         {shop.cityState}
                         <br/>
-                        Rating: {shop.ratings}
+                        Rating: {shop.rating}
                       </Card.Text>
                       <Button variant="outline-dark" href={`/details/${shop._id}`}>
                         Details
