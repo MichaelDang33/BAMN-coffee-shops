@@ -1,4 +1,4 @@
-#  Coffee Shop Finder
+#  Caffeine  Chronicles 
 This application will use full CRUD operations for customers to create and update details about coffee shops in their area. 
 
 
@@ -12,11 +12,11 @@ This application will use full CRUD operations for customers to create and updat
 
 ## User Story
 
-Create a coffee shop finder app in downtown city for customers to create, update and delete details (menu, description, location,)
+Users want great coffee and blog about it and share their experience. Create a coffee shop finder app in downtown city for customers to create, update and delete details (menu, description, location,) 
 
 ## App link     https://bamncoffeeshops-lw86.onrender.com/
 
-Screenshots
+![screenshot_2023-08-01_220509](https://github.com/vogat/hiking/assets/132204123/6ce6ad42-660f-41b0-ab5d-d718c27d48dd)
 
 
 ## Technologies used
