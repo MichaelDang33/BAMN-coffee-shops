@@ -31,11 +31,11 @@ MongoDB, React, AJAX, Axios, Express, NodeJS, HTML, CSS and Bootstrap
 
 ## Stretch Goals
 
-Add user login page
-
 Add sorting functionality to sort by name/description and location
 
 Add Users ability to leave comments 
+
+Add Feebback and Contact funtionality to get user feedback
 
  
 
