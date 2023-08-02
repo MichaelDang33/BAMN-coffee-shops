@@ -6,8 +6,8 @@
   --tan-3: #E2D9D1;
   --tan-4: #4d4339;
   --orange: #F67F00;
-  --text-light: #2c2620;
-  --text-dark: #584940;
+  --text-light: #020202;
+  --text-dark: #100e0d;
 }
 
 *, *:before, *:after {
@@ -86,7 +86,7 @@ code {
 }
 
 p.error-message {
-  color: var(--orange);
+  color: black;
   text-align: center;
 }
 
@@ -114,14 +114,14 @@ input {
 }
 
 input:focus {
-  border-color: var(--orange);
+  border-color:black;
 }
 
 button, a.button {
   margin: 1vmin;
   padding: 1vmin;
   color: var(--white);
-  background-color: var(--orange);
+  background-color: black;
   font-size: 2vmin;
   font-weight: bold;
   text-decoration: none;

@@ -6,11 +6,10 @@ export default function CoffeeShopsPage() {
   const [coffeeShop, setCoffeeShop] = useState([]);
 
   const getCoffeeShop = () => {
-    axios.get('https://bamn-coffee-shops.onrender.com/coffeeshops/')
-      .then((response) => setCoffeeShop(response.data))
-      .catch((error) => console.log(error));
-  };
-
+    axios.get('http://localhost:3000/coffeeshops')
+    .then((response)=> setCoffeeShop(response.data), (err) => console.log(err))
+    .catch((error) => console.log(error))
+}
   useEffect(() => {
     getCoffeeShop();
   }, []);

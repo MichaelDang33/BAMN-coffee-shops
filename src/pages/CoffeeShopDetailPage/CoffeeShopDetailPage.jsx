@@ -12,19 +12,19 @@ export default function CoffeeShopDetailPage() {
   const navigate = useNavigate();
 
   const handleDelete = () => {
-    axios.delete(`https://bamn-coffee-shops.onrender.com/coffeeshops/${id}/`)
+    axios.delete(`http://localhost:3000/coffeeshops/${id}/`)
       .then(() => navigate('/coffeeshops'))
       .catch(err => console.log(err));
   }
 
   const handleEdit = (editedShop) => {
-    axios.put(`https://bamn-coffee-shops.onrender.com/coffeeshops/${id}/`, editedShop)
+    axios.put(`http://localhost:3000/coffeeshops/${id}/`, editedShop)
       .then(res => setCoffeeShop(res.data))
       .catch(err => console.log(err));
   }
 
   useEffect(() => {
-    axios.get(`https://bamn-coffee-shops.onrender.com/coffeeshops/${id}/`)
+    axios.get(`http://localhost:3000/coffeeshops/${id}/`)
       .then(res => setCoffeeShop(res.data))
       .catch(err => console.log(err));
   }, [id]);
