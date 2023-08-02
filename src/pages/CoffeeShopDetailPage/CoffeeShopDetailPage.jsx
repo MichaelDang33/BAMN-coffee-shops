@@ -55,7 +55,7 @@ export default function CoffeeShopDetailPage() {
   <Col md={8}>
 
     <h4>Located in {coffeeShop.cityState}</h4>
-    <h4>{coffeeShop.description}</h4>
+    <p>{coffeeShop.description}</p>
     <h4>Featured Items : {coffeeShop.featuredItems}</h4>
     <h4>Rating: {coffeeShop.rating}</h4>
     <a href={googleMapsLink} target="_blank" rel="noopener noreferrer">

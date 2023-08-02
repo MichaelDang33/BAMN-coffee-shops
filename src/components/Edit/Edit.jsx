@@ -28,7 +28,7 @@ const Edit = (props) => {
             <br/><br/>
             <input type='text' placeholder='Website' value={shop.website} name='website' onChange={handleChange}/>
             <br/><br/>
-            <input type='text' placeholder='City and State' value={shop.cityState} name='cityState' onChange={handleChange}/>
+            <input type='text' placeholder='City, State' value={shop.cityState} name='cityState' onChange={handleChange}/>
             <br/><br/>
             <input type='text' placeholder='Location' value={shop.location} name='location' onChange={handleChange}/>
             <br/><br/>
