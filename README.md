@@ -12,7 +12,7 @@ This application will use full CRUD operations for customers to blog and update 
 
 ## User Story
 
-Users want great coffee and blog about it and share their experience with fellow coffeeholics. Create a coffee shop finder app in downtown city for customers to create, update and delete details (menu, description, location,) 
+Users want great coffee and blog about it and share their experience with fellow coffeeholics. Create a coffee shop blogging app for customers to create, update and delete details (menu, description, location,) 
 
 ## App link     https://bamncoffeeshops-lw86.onrender.com/
 
