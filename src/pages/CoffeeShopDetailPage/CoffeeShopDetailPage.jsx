@@ -67,3 +67,9 @@ export default function CoffeeShopDetailPage() {
     </>
   );
 }
+
+// import { makeGoogleMapsLink } from '../../index';
+//  const googleMapsLink = makeGoogleMapsLink(shop.location); line 50
+//  <a href={googleMapsLink} target="_blank" rel="noopener noreferrer">
+//               View Location
+//             </a> line 63
