@@ -1,7 +1,9 @@
 #  Caffeine  Chronicles 
 ![main page](<Img/Screenshot 2023-08-02 091148.png>)
 ![details page](<Img/Screenshot 2023-08-02 091214.png>)
-![create form](<Img/Screenshot 2023-08-01 220535.png>)
+![create form](<Img/Screenshot 2023-08-01 220535 (2).png>)
+<br/>
+
 
 Welcome to Caffeine Chronicles, the ultimate app for all coffee enthusiasts and cafe connoisseurs! Our platform is dedicated to providing comprehensive reviews and insights about coffee shops from around the world. Whether you're a seasoned coffee aficionado or just beginning your journey into the world of specialty brews, Caffeine Chronicles is your trusted companion for discovering the perfect coffee shop for your unique taste.
 At Caffeine Chronicles, we understand the importance of a perfect cup of coffee, and our community of passionate reviewers shares their firsthand experiences to guide you on your coffee adventures. From quaint hidden gems to bustling urban hangouts, we've meticulously curated a diverse range of coffee shop profiles to suit every mood and preference.
