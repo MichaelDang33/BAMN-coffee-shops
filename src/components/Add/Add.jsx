@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { Form } from 'react-bootstrap';
 
 const Add = (props) => {
     const [shop, setShop] = useState({ name: '', location: '', cityState: '', featuredItems: '', description: '', website: '', rating: 0, image: '' });
@@ -53,7 +52,7 @@ const Add = (props) => {
                             <input class="form-control" type='text' name='cityState' id='cityState' onChange={handleChange} />
                         </div>
                         <div class="col-md-6">
-                            <label for="location" class="form-label">Adress:</label>
+                            <label for="location" class="form-label">Address:</label>
                             <input class="form-control" type='text' name='location' id='location' onChange={handleChange} />
                         </div>
                         <div class="col-md-6">
