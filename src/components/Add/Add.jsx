@@ -24,7 +24,7 @@ const Add = (props) => {
             <h1 className="p-4" >Create A Coffee Shop Listing </h1>
 
             <div>
-                <div className='align-items-center'>
+                <div className='p-4 align-items-center'>
                     <form class="row g-3 " onSubmit={handleSubmit}>
                         <div class="col-md-6">
                             <label for="name" class="form-label">Name:</label>
